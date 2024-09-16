@@ -1,0 +1,91 @@
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 20px;
+    cursor: pointer;
+}
+.sprite-menu-green-dashboard {
+    width: 56px;
+    height: 60px;
+    background-position: -71px -137px;
+}
+
+/*.sprite-menu-green-dashboard:hover {
+    width: 56px;
+    height: 56px;
+    background-position: -120px -5px;
+}*/
+
+.sprite-menu-blue-chart {
+    width: 40px;
+    height: 56px;
+    background-position: -5px -5px;
+}
+
+.sprite-menu-blue-comment {
+    width: 55px;
+    height: 56px;
+    background-position: -55px -5px;
+}
+
+/*.sprite-menu-blue-dashboard {
+    width: 56px;
+    height: 56px;
+    background-position: -120px -5px;
+}*/
+
+.sprite-menu-blue-notes {
+    width: 43px;
+    height: 56px;
+    background-position: -5px -71px;
+}
+
+.sprite-menu-blue-people {
+    width: 60px;
+    height: 56px;
+    background-position: -58px -71px;
+}
+
+.sprite-menu-blue-tag {
+    width: 48px;
+    height: 56px;
+    background-position: -128px -71px;
+}
+
+.sprite-menu-blue-comment:hover {
+    width: 56px;
+    height: 60px;
+    background-position: -5px -137px;
+}
+
+/*.sprite-menu-blue-dashboard:hover {
+    width: 56px;
+    height: 60px;
+    background-position: -71px -137px;
+}*/
+
+.sprite-menu-blue-chart:hover {
+    width: 46px;
+    height: 60px;
+    background-position: -137px -137px;
+}
+
+.sprite-menu-blue-notes:hover {
+    width: 46px;
+    height: 60px;
+    background-position: -186px -5px;
+}
+
+.sprite-menu-blue-people:hover {
+    width: 65px;
+    height: 60px;
+    background-position: -193px -75px;
+}
+
+.sprite-menu-blue-tag:hover {
+    width: 50px;
+    height: 60px;
+    background-position: -193px -145px;
+}
+

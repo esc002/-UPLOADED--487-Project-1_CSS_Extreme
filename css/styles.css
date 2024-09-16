@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --md-blue:  #2498f4; /* Blue */
+  --md-green: #33cc66; /* Green */
+  --orange: rgb(255, 155, 19); /* Orange */
+  --l-gray: rgb(238, 238, 238); /* Light gray */
+  --d-gray: rgb(119, 119, 119); /* Dark gray */
+}
+
+h1 h2 p small {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  color: var(--md-blue);
+  padding: 10px;
+}
+
+.gray-box {
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.top-bar {
+  background-color: var(--md-blue);
+  border: 1px solid black;
+}
+
+.white-text {
+  color: white;
+}
+
+.nav-white-text {
+  padding-left: 20px;
+}
+
+.menu-bar {
+  background-image: url(../images/menu2-bg.png);
+  height: auto;
+  align-items: center;
+}
+
+.menu-bar-item {
+  display: flex;
+  justify-content: center;
+}
+
+.search-div {
+  float: right;
+  align-items: middle;
+  margin-top: 15px;
+}
+
+.searchbar {
+  border: none;
+  position: relative;
+}
+
+.search-btn {
+  border: none;
+  background-color: white;
+}
+
+.search-btn i {
+  color: var(--md-blue);
+}
+
+.blue-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.gray-gradient {
+  background: linear-gradient(180deg, rgba(0,0,0,0.01) 20%, rgba(255,255,255,0.50) 100%); 
+}
+
+.dashboard-box {
+  color: white;
+  background-color: var(--md-green);
+  border: 1px solid var(--md-green);
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.content-start {
+  padding-top: 25px;
+}
+
+.content-box {
+  border: 1px solid var(--l-gray);
+  border-radius: 2px;
+  margin-top: 15px;
+  padding: 20px;
+  width: 100%;
+}
+
+.channels-style {
+  border-left: 3px solid var(--l-gray);
+  padding: 0px;
+  margin: auto;
+}
+
+.btn {
+  margin: 10px;
+  padding: 0px 8px;
+  height: min-content;
+  font-size: 12pt;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.task-gear {
+  position: absolute;
+  right: 15px;
+  font-size: medium;
+}
+
+.task-element {
+  margin: 30px 0px;
+}
+
+.task-hr {
+  margin-left: -15px;
+  width: 110%;
+}
+
+.rec-hr {
+  border: 1px dotted var(--l-gray);
+}
+
+.analytics-subheader {
+  color: gray;
+  margin-bottom: -1px;
+}
+
+/* Searchbar */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  margin-top: 12px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  float: left;
+  width: 85%;
+  height: 30px;
+  background: white;
+}
+
+/* Style the submit button */
+form.example button {
+  margin-top: 12px;
+  float: left;
+  width: 15%;
+  height: 30px;
+  background: white;
+  color: var(--md-blue);
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example i {
+  margin-top: -15px;
+}
+
+form.example button:hover {
+  background: var(--md-blue);
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+.list-task {
+  border-bottom: 1px solid var(--l-gray);
+  list-style-type: none;
+  max-width: 100%;
+}
+
+.list-rec {
+  border-bottom: 1px dotted var(--l-gray);
+  list-style-type: none;
+  max-width: 100%;
+}
+*/
+
+.checkbox-list {
+  margin-left: 15%;
+}
+
+/* To try and get the checkboxes to work, I used this code: https://gist.github.com/arbales/592332 */
+
+input[type=checkbox] {
+  display:none;
+}
+
+input[type=checkbox] + label
+ {
+     background-image: url("../images/checkbox.png");
+     background-repeat: no-repeat;
+     height: 25px;
+     width: 18px;
+ }
+ 
+ input[type=checkbox]:checked + label
+  {
+    background-image: url("../images/custom-checkbox.png");
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 24px;
+    margin-top: -4px;
+  }
+
+.checkbox-button-1 {
+  background-color: rgb(17, 69, 112);
+  color: white;
+  margin-top: -5px;
+  font-size: 9pt;
+}
+
+.checkbox-button-2 {
+  background-color: var(--md-blue);
+  color: white;
+  margin-top: -5px;
+  font-size: 9pt;
+}
+
+.checkbox-button-3 {
+  background-color: rgb(58, 89, 155);
+  color: white;
+  margin-top: -5px;
+  font-size: 9pt;
+}
+
+.checkbox-button-4 {
+  background-color: var(--md-green);
+  color: white;
+  margin-top: -5px;
+  font-size: 9pt;
+}
+
+.carousel-nav {
+  transition: none;
+}
+
+.contacts-cards {
+  margin-left: 20px;
+}
+
+.contacts-box {
+  width: 210px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+  border: 1px solid var(--l-gray); 
+  border-radius: 5px;
+}
+
+.contacts-outline {
+  border: 1px solid var(--l-gray); 
+  border-radius: 5px;
+}
+
+.contacts-box h3 {
+  font-size: 16pt;
+}
+
+.contacts-box-band {
+  background-color: var(--md-blue);
+  width: 211px;
+  margin-left: -1px;
+}
+
+.card-img {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  margin-left: 21%;
+  margin-top: -9.5%;
+}
+
+/*
+.stat-cards {
+  border: 1px solid var(--l-gray); 
+  width: 215px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+}
+
+.stat-cards h3 {
+  font-size: 16pt;
+}
+
+.stat-card-band {
+  background-color: var(--md-blue);
+  width: 216px;
+} */
+
+.content-box-inner {
+  border: 1px solid var(--l-gray);
+  box-shadow: 2px 2px 5px -2px var(--l-gray);
+  background-color: white;
+}
+
+.all-content {
+  margin: auto;
+}
+
+.announce-text {
+  color: var(--orange);
+  padding-top: 15px;
+}
+
+.announce-quote {
+  font-size: 11pt;
+  color: var(--d-gray);
+  padding-top: 15px;
+}
+
+.announce-arrows {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.announce-arrow-indiv {
+  padding: 2px;
+}
+
+table {
+  width: 100%;
+}
+
+small {
+  font-size: 8pt;
+}
+
+.counter-box {
+  width: 80px;
+  height: 30px;
+}
+
+.counter-box-border {
+  border: 1px solid var(--l-gray); 
+  border-radius: 5px;
+  padding: 3px 6px;
+}
+
+.green-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.quote-div {
+  padding: 10px;
+  margin: auto;
+}
+
+.quote-blue-bg {
+  background-color: var(--md-blue);
+  border: 1px solid var(--md-blue);
+  border-radius: 2px;
+  color: white;
+  padding: 25px 50px;
+}
+
+.quote-white-arrow-bg-L {
+  position: absolute;
+  top: 42%;
+  left: -5px;
+  transform: rotate(90deg);
+  height: 30px;
+  width: 60px;
+  border-radius: 150px 150px 0 0;
+  background-color: white;
+}
+
+.quote-white-arrow-bg-R {
+  position: absolute;
+  top: 42%;
+  right: -5px;
+  transform: rotate(270deg);
+  height: 30px;
+  width: 60px;
+  border-radius: 150px 150px 0 0;
+  background-color: white;
+}
+
+.quote-arrow-L {
+  color: var(--orange);
+  position: absolute;
+  top: -40%;
+  left: 20%;
+  font-size: 36px;
+}
+
+.quote-white-arrow-bg-L:hover {
+  box-shadow: -10px 0px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.quote-white-arrow-bg-R:hover {
+  box-shadow: 10px 0px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.quote-arrow-R {
+  color: var(--orange);
+  position: absolute;
+  top: -40%;
+  left: 20%;
+  font-size: 36px;
+}
+
+.dropdown-box {
+  background-color: white;
+  color: var(--d-gray);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--l-gray);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  right: 0px;
+}
+
+/*
+.dropdown-arrow-bg {
+  background-color: white;
+  position: absolute;
+  right: 32px;
+}
+
+.dropdown-arrow {
+  color: var(--orange);
+  font-size: 16px;
+}*/
+
+select::-ms-expand {
+  display: none;
+}
+
+.chevron:hover {
+  box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card-ads-move:hover {
+  box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.ads-png:hover {
+  box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.ads-blue-bg {
+  background-color: var(--md-blue);
+  margin: 0px;
+  padding: 15px;
+}
+
+.ads-white-bg {
+  background-color: white;
+  border-radius: 5px;
+  height: auto; 
+  width: 100%;
+  margin: 10px;
+}
+
+.ads-png {
+  position: absolute;
+  width: 97%;
+  height: 96%;
+  margin-top: 0px;
+  margin-left: 4px;
+}
+
+.footer-edit {
+  overflow: hidden;
+  /*padding-left: 8%;*/
+}
+
+.footer-icons {
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+.footer-icons li {
+  border-left: 1px solid var(--l-gray);
+  padding: 10px;
+}
+
+/*
+.footer-edit li {
+  list-style: none;
+  display: block;
+  float: left;
+}
+*/
+.footer-list {
+  list-style: none;
+  display: flex;
+  float: left;
+}
+
+.footer-list li {
+  border-right: 1px solid var(--l-gray);
+  padding: 10px;
+}
+
+.footer-text {
+  display: flex;
+  padding-top: 10px;
+}
+
+.footer-list i {
+  color: var(--md-blue);
+}
+
+.footer-list a {
+  color: gray;
+}
+
+.footer-list a:visited {
+  color: gray;
+}
+
+.footer-list a:active {
+  color: gray;
+}
+
+.footer-icons a {
+  color: gray;
+}
+
+.footer-icons a:visited {
+  color: gray;
+}
+
+.footer-icons a:active {
+  color: gray;
+}
+
+.footer-text a {
+  color: var(--md-blue);
+}
+
+.recommendations {
+  list-style-type: none;
+  border-bottom: 1px solid var(--l-gray);
+}
+
+.gray-text {
+  color: gray;
+  margin: 5px;
+}
+
+.task-item {
+  color: var(--md-blue);
+  margin: 5px;
+  cursor: pointer;
+}
+
+.task-item img{
+  color: var(--md-green);
+}
+
+.task-item svg {
+  color:var(--md-green);
+  height: 22px;
+  width: 22px;
+}
+
+.task-item:hover {
+  color: gray;
+}
+
+.task-item:hover svg {
+  color: gray;
+  height: 22px;
+  width: 22px;
+}
+
+.rec-activities {
+  cursor: pointer;
+}
+
+.rec-activities:hover {
+  color: var(--md-blue);
+}
+
+.gear-align {
+  text-align: right;
+  align-items: center;
+}
+
+.analytics-dropdown{
+  height: min-content;
+  right: 0px;
+}
+
+.analytics-dropdown i {
+  border-left: 1px solid var(--l-gray);
+  padding-left: 4px;
+  padding-right: 4px;
+  color: var(--orange);
+}
+
+.dropdown-btn {
+  border: 1px solid var(--l-gray);
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 30px;
+  border-top: 1px solid var(--l-gray);
+  color: gray;
+  font-size: 9pt;
+}
+
+a:visited {
+  color: var(--md-green);
+}
+
+a:active {
+  color: var(--md-blue);
+}
